@@ -13,10 +13,18 @@ config_version=5
 config/name="godot_adventure"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[file_customization]
+
+folder_colors={
+"res://Ninja Adventure - Asset Pack/": "green",
+"res://Scenes/": "blue"
+}
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
