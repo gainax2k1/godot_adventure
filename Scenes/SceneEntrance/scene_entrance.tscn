@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cy77p21q50f26"]
+
+[ext_resource type="Script" uid="uid://df2onu5pshsjr" path="res://Scenes/SceneEntrance/scene_entrance.gd" id="1_6rkgu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oi8ly"]
+size = Vector2(18, 10)
+
+[node name="SceneEntrance" type="Area2D" unique_id=1600042284]
+script = ExtResource("1_6rkgu")
+next_scene = "res://Scenes/DungeonScene/dungeon_scene.tscn"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=155921163]
+shape = SubResource("RectangleShape2D_oi8ly")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

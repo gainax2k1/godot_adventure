@@ -11,7 +11,12 @@ config_version=5
 [application]
 
 config/name="godot_adventure"
+run/main_scene="uid://dgs2m03mexhgp"
 config/features=PackedStringArray("4.6", "Forward Plus")
+
+[autoload]
+
+SceneManager="*uid://d0lkphee4wl1u"
 
 [file_customization]
 

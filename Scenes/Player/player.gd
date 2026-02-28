@@ -1,9 +1,11 @@
 extends CharacterBody2D
+class_name Player
 
 @export var move_speed: float = 100
 
 
 func _ready():
+	position = SceneManager.player_spawn_position
 	pass
 	
 
